@@ -139,11 +139,37 @@
 }
 
 .headerBottomMenu {
-  max-height: 57px;
+  margin-bottom: 40px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+.headerBottomMenu__menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.headerBottomMenu__menu-item {
+  margin-right: 47px;
+  color: #466660;
+  font-weight: 300;
+}
+
+.offers__left-img {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.offers__left-img a {
+  margin-bottom: 16px;
+}
+.offers__img {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -180,7 +206,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1550px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -189,7 +215,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .wrapper {
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
 }

@@ -1,11 +1,18 @@
 .headerBottomMenu {
-    max-height: 57px;
+    margin-bottom: 40px;
+    height: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #E6E6E6;
     &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
     &__menu-item {
+        margin-right: 47px;
+        color: #466660;
+        font-weight: 300;
     }
 }

@@ -1,0 +1,21 @@
+.offers {
+
+    &__wrap {
+    }
+
+    &__top-banner {
+    }
+
+    &__left-img{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        a {
+            margin-bottom: 16px;
+        }
+    }
+    &__img{
+        display: flex;
+        justify-content: space-between;
+    }
+}
