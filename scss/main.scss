@@ -26,15 +26,6 @@ a {
     color: #111;
 }
 
-button {
-    border: none;
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-}
 
 ul, ol {
     margin: 0;
@@ -67,15 +58,6 @@ h1, h2, h3, h4, h5, h6, ul , p {
     display: block;
     font-weight: 700;
     color: #16182D;
-    @include b(tablet) {
-        font-size: 35px;
-    }
-    @include b(mobile) {
-        font-size: 25px;
-    }
-    @include b(468) {
-        font-size: 25px;
-    }
   }
   
   .btn {
@@ -218,15 +200,6 @@ select {
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
-    @include b(490) {
-        font-size: 12px;
-    }
-}
-
-option {
-    color: #000;
-    font-size: 14px;
-    font-family: "Montserrat";
     @include b(490) {
         font-size: 12px;
     }
