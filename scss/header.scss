@@ -1,0 +1,142 @@
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6;
+    &__shipping {
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #466660;
+            a {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+                @include trs;
+
+                &:hover {
+                    color: ff0000;
+                }
+            }
+
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 42px 0 35px 0;
+    }
+
+    &__search {
+        position: relative;
+        button {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 100%;
+            border-left: 1px solid #000;
+            border-radius: 50px;
+            cursor: pointer;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__logo {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__signin {
+        display: flex;
+        align-items: center;
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                padding-left: 10px;
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            
+    }
+
+    &__img-card {
+        position: relative;
+        img {
+            padding-left: 24px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: -15px;
+            border-left: 1px solid #3C4146;
+            border-bottom: 1px solid #3C4146;
+            width: 8px;
+            height: 8px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__burger-position {
+    }
+
+    &__btn-menu {
+    }
+
+    &__wrap-nav {
+    }
+
+    &__nav {
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+
+    }
+
+    &__nav-item {
+
+            margin-right: 29px;
+            
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            color: #466660;
+            width: 100%;
+            position: relative;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            bottom: -9px;
+            width: 0;
+            left: 0;
+            height: 3px;
+            transition: all .3s;
+            background-color: #FB5018;
+            color: #fff;
+        }
+        a:hover::before {
+           width: 100%;
+        }
+    }
+}
