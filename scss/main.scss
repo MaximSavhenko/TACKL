@@ -3,9 +3,8 @@
 @import "header.scss";
 @import "headerBottomMenu.scss";
 @import "offers.scss";
-
-
-
+@import "foryou.scss";
+@import "bestsellers.scss";
 
 
 body {
@@ -14,6 +13,9 @@ body {
     font-size: 16px;
     font-family: 'Montserrat' , sans-serif , Arial;
     font-weight: 400;
+    background-color: #FFF5EA;
+    background-image: url(../img/bc.png);
+    background-repeat: repeat;
 }
 
 .overflow {
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
 }
 
 .container {
-    max-width: 1550px;
+    max-width: 1485px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
@@ -54,16 +56,24 @@ h1, h2, h3, h4, h5, h6, ul , p {
   .wrapper {
     overflow: hidden;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     flex-direction: column;
     min-height: 100vh;
   }
   
   .caption {
-    font-size: 48px;
+    font-size: 80px;
+    font-family: 'Norwester' , sans-serif;
     display: block;
-    font-weight: 700;
-    color: #16182D;
+    font-weight: 400;
+    color: #466660;
+    text-transform: uppercase;
+  }
+
+  .descr {
+      color: #3C4146;
+      font-weight: 500;
+      text-transform: uppercase;
   }
   
   .btn {

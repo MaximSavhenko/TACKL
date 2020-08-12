@@ -1,0 +1,124 @@
+.bestsellers {
+
+    margin-bottom: 94px;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    // &__descr {
+    //     margin-bottom: 10px;
+    // }
+
+    &__capt {
+        position: relative;
+        margin-bottom: 60px;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 25%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 89px;
+            height: 9px;
+            background-color: #B6C4A2;
+        }
+    }
+    
+
+    &__slider {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    &__slider-items {
+        width: 25%;
+        padding: 0 15px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__items-inner {
+        background-color: #fff;
+        padding: 21px 44px;
+        box-shadow: 3px 3px 60px 0px rgba(0,0,0,0.2);
+        p { 
+            font-weight: 700;
+            color: #B6C4A2;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__items-details {
+    }
+
+    &__prise-club {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px dotted #ccc;
+        }
+        
+    }
+
+    &__karlsclub {
+        color: #dd5638;
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        padding: 0 5px 0 0px;
+    }
+
+    &__value {
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        padding: 0 0 0 5px;
+    }
+
+    &__prise-nonmambers {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px dotted #ccc;
+        }
+    }
+
+    &__nonemambers{
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        padding: 0 5px 0 0px;
+    }
+    &__appraisal{
+        display: flex;
+        justify-content: space-between;
+        span {
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #B6C4A2;
+        }
+    }
+}
