@@ -5,6 +5,8 @@
 @import "offers.scss";
 @import "foryou.scss";
 @import "bestsellers.scss";
+@import "footer.scss";
+
 
 
 body {
@@ -104,31 +106,8 @@ h1, h2, h3, h4, h5, h6, ul , p {
     }
   }
 
-  input[type=text]{
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 12px 0;
-    border: none;
-    border-bottom: 2px solid #cccc;
-    background: none;
-    font-size: 12px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    color: #111;
-    transition: all .2s;
-    @include b(490) {
-        font-size: 12px
-    }
-    &::placeholder {
-        color: #000;
-    }
-    &:focus {
-        border-color: #282b31;
-    }
-}
-
-input[type=search]{
+input[type=search],
+input[type=text]{
     display: block;
     width: 100%;
     height: 50px;
@@ -147,6 +126,18 @@ input[type=search]{
     }
     &::placeholder {
         color: #3C4146;
+        font-weight: 500;
+    }
+    &:focus {
+        box-shadow: 0 0 3px 1px #68a8e0;
+    }
+}
+
+input[type=text] {
+    border: 1px solid #fff;
+    color: #fff;
+    &::placeholder {
+        color: #fff;
         font-weight: 500;
     }
 }
