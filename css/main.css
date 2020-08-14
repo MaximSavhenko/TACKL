@@ -415,6 +415,16 @@
   text-transform: uppercase;
   color: #B6C4A2;
 }
+.foryou__decor {
+  position: absolute;
+  bottom: -150px;
+  right: -90px;
+  z-index: -1;
+}
+.foryou__decor img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .bestsellers {
   margin-bottom: 154px;
@@ -527,6 +537,16 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #B6C4A2;
+}
+.bestsellers__decor {
+  position: absolute;
+  top: 150px;
+  left: -80px;
+  z-index: -1;
+}
+.bestsellers__decor img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .footer {

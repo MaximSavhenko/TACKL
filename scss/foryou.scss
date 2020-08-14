@@ -1,5 +1,6 @@
 .foryou {    
     margin-bottom: 94px;
+    // position: relative;
     &__wrap{
         display: flex;
         flex-direction: column;
@@ -129,4 +130,14 @@
         }
     }
 
+    &__decor{
+        position: absolute;
+        bottom: -150px;
+        right: -90px;
+        z-index: -1;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
