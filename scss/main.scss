@@ -110,7 +110,7 @@ input[type=search],
 input[type=text]{
     display: block;
     width: 100%;
-    height: 50px;
+    height: 39px;
     padding: 10px 22px;
     border: none;
     border: 1px solid #000;
@@ -118,7 +118,7 @@ input[type=text]{
     background: none;
     font-size: 16px;
     font-family: "Montserrat";
-    font-weight: 600;
+    font-weight: 500;
     color: #3C4146;
     transition: all .2s;
     @include b(490) {
@@ -131,6 +131,7 @@ input[type=text]{
     &:focus {
         box-shadow: 0 0 3px 1px #68a8e0;
     }
+    
 }
 
 input[type=text] {
@@ -165,27 +166,12 @@ input[type=file]{
     
 }
 
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-    z-index: -1;
-    +label {
-        width: 100%;
-        padding: 15px 40px;
-        font-size: 14px;
-        font-family: "Montserrat";
-        font-weight: 700;
-        color: #fff;
-        cursor: pointer;
-        border: 2px dashed #FFFFFF;
-        background: none;
-        border-radius: 5px;
-        display: inline-block;
-    }
-}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 textarea {
     display: block;
@@ -242,5 +228,81 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+// SLICK SLIDER ---------------------------------------
 
+.slider {
+    position: relative;
+    min-width: 0;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+    padding: 60px 0px;
+}
+
+//arrow
+
+.slick-arrow {
+    @include flex_c;
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.slick-arrow.slick-prev{
+    left: -10px;
+    &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-bottom: 3px solid #000;
+        border-left: 3px solid #000;
+        transform: rotate(45deg);
+        display: block; 
+        
+    }
+    
+}
+
+.slick-arrow.slick-next{
+   right: 0;
+   &::after {
+       content: '';
+       width: 10px;
+       height: 10px;
+       border-bottom: 3px solid #000;
+       border-right: 3px solid #000;
+       transform: rotate(-45deg);
+       display: block; 
+       
+   }
+   
+}
+.slick-arrow {
+    margin-top: 40px;
+  }
+
+  .slick-arrow.slick-prev {
+      left: -35px;
+      @include b(tablet) {
+          left: 0;
+          z-index: 1;
+      }
+  }
+  .slick-arrow.slick-next {
+      right: -40px;
+      @include b(tablet) {
+          right: 0;
+          z-index: 1;
+      }
+  }
+// SLICK SLIDER ---------------------------------------
 

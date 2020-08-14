@@ -4,12 +4,12 @@
     &__wrap{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
     
-    // &__descr {
-    //     margin-bottom: 10px;
-    // }
+    &__descr {
+        margin-bottom: 11px;
+    }
 
     &__capt {
         position: relative;
@@ -17,9 +17,9 @@
         &::after {
             content: '';
             position: absolute;
-            right: 25%;
-            bottom: -10px;
-            transform: translateX(-50%);
+            left: 50%;
+            transform: translate(-50% , -50%);
+            bottom: -15px;
             width: 89px;
             height: 9px;
             background-color: #B6C4A2;
@@ -82,12 +82,18 @@
         padding: 0 5px 0 0px;
     }
 
-    &__value {
+    &__value,
+    &__prise {
         font-weight: 700;
+        color: #dd5638;
         position: relative;
         z-index: 1;
         background-color: #fff;
         padding: 0 0 0 5px;
+    }
+
+    &__prise{
+        color: inherit;
     }
 
     &__prise-nonmambers {
