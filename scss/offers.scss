@@ -16,11 +16,19 @@
 
     &__img{
         display: flex;
+        @include b(530) {
+            flex-direction: column;
+        }
     }
 
     &__left-img{
         width: 34%;
-        margin-right: 20px;       
+        margin-right: 20px;
+        @include b(530) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }       
         a {
             margin-bottom: 16px;
             display: block;
@@ -34,11 +42,17 @@
             max-height: 100%;
             object-fit: cover;
             display: block;
+            @include b(530) {
+                width: 100%;
+            } 
         }
     }
 
     &__right-img {
         width: 66%;
+        @include b(530) {
+            width: 100%;
+        }
         img {
             max-width: 100%;
             max-height: 100%;

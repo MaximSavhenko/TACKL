@@ -15,5 +15,8 @@
         margin-right: 47px;
         color: #466660;
         font-weight: 300;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

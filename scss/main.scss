@@ -18,6 +18,7 @@ body {
     background-color: #FFF5EA;
     background-image: url(../img/bc.png);
     background-repeat: repeat;
+    
 }
 
 .overflow {
@@ -70,6 +71,9 @@ h1, h2, h3, h4, h5, h6, ul , p {
     font-weight: 400;
     color: #466660;
     text-transform: uppercase;
+    @include b(tablet) {
+        font-size: 70px;
+     }
   }
 
   .descr {
@@ -124,6 +128,9 @@ input[type=text]{
     @include b(490) {
         font-size: 12px
     }
+    @include b(tablet) {
+        font-size: 14px;
+     }
     &::placeholder {
         color: #3C4146;
         font-weight: 500;
@@ -232,7 +239,6 @@ input:-webkit-autofill:active {
 
 .slider {
     position: relative;
-    min-width: 0;
 }
 
 .slick-track {
@@ -240,8 +246,9 @@ input:-webkit-autofill:active {
 }
 
 .slick-list {
-    overflow: hidden;
-    padding: 60px 0px;
+    overflow: visible;
+    padding: 60px 0;
+    min-width: 0;
 }
 
 //arrow
@@ -249,60 +256,70 @@ input:-webkit-autofill:active {
 .slick-arrow {
     @include flex_c;
     position: absolute;
-    top: 50%;
+    top: 60%;
     font-size: 0;
-    border: 2px solid #000;
-    border-radius: 50%;
+    border: none;
+    background-color: transparent;
     width: 30px;
     height: 30px;
 }
 
 .slick-arrow.slick-prev{
-    left: -10px;
+    left: -30px;
+    @include b(tablet) {
+        left: 0;
+        z-index: 1;
+    }    
     &::after {
         content: '';
-        width: 10px;
-        height: 10px;
-        border-bottom: 3px solid #000;
-        border-left: 3px solid #000;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #B6C4A2;
+        border-left: 3px solid #B6C4A2;
         transform: rotate(45deg);
         display: block; 
-        
     }
+
+    
     
 }
 
 .slick-arrow.slick-next{
-   right: 0;
+   right: -30px;
+      @include b(tablet) {
+          right: 0;
+          z-index: 1;
+      }
    &::after {
        content: '';
-       width: 10px;
-       height: 10px;
-       border-bottom: 3px solid #000;
-       border-right: 3px solid #000;
+       width: 15px;
+       height:15px;
+       border-bottom: 3px solid #B6C4A2;
+       border-right: 3px solid #B6C4A2;
        transform: rotate(-45deg);
        display: block; 
        
    }
    
 }
-.slick-arrow {
-    margin-top: 40px;
-  }
 
-  .slick-arrow.slick-prev {
-      left: -35px;
-      @include b(tablet) {
-          left: 0;
-          z-index: 1;
-      }
-  }
-  .slick-arrow.slick-next {
-      right: -40px;
-      @include b(tablet) {
-          right: 0;
-          z-index: 1;
-      }
-  }
+.slick-slide .foryou__items-inner {
+    box-shadow: none;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.slick-slide.slick-active .foryou__items-inner{
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.2);
+}
+
+.slick-slide .bestsellers__items-inner {
+    box-shadow: none;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.slick-slide.slick-active .bestsellers__items-inner{
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.2);
+}
+
 // SLICK SLIDER ---------------------------------------
 

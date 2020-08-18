@@ -4,7 +4,9 @@
     background-image: url(../img/footer_counture.png);
     background-repeat: no-repeat;
     background-position: 75% top;
-    
+    @include b(tablet) {
+        font-size: 14px;
+    }
     &__wrap {
         display: flex;
         flex-direction: column;
@@ -13,22 +15,38 @@
     &__col-wrap {
         display: flex;
         justify-content: space-between;
+        @include b(tablet) {
+            flex-direction: column;
+            padding: 20px 0;
+        }
     }
 
     &__col {
         width: 25%;
+        @include b(tablet) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
     }
 
     &__col-caption {
         color: #fff;
         font-weight: 700;
         margin-bottom: 52px;
+        @include b(tablet) {
+            font-size: 16px;
+        }
     }
 
     &__col-items {
         color: #fff;
         font-weight: 500;
         margin-bottom: 20px;
+        @include b(tablet) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
         a {
             color: #fff;
             font-weight: 500; 
@@ -39,6 +57,7 @@
         color: #fff;
         font-weight: 700;
         margin-bottom: 20px;
+        
     }
 
     &__col-items-icon{
@@ -51,6 +70,12 @@
 
     &__col-input{
         position: relative;
+        @include b(tablet) {
+            width: 60%;
+        }
+        @include b(320) {
+            width: 100%;
+        }
         button {
             border: none;
             background: none;
