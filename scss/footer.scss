@@ -103,11 +103,16 @@
         justify-content: space-between;
         padding: 20px 0;
         position: relative;
+        @include b(700) {
+            flex-direction: column;
+        }
         &::before {
             content: '';
-            width: 100%;
             position: absolute;
             top: 0;
+            bottom: 0;
+            right: -99999px;
+            left: -99999px;
             height: 1px;
             background-color: #fff;
         }
@@ -118,6 +123,9 @@
     }
 
     &__cards-link {
+        @include b(700) {
+            margin-bottom: 20px;
+        }
         a {
             padding-right: 24px;
             color: #fff;
@@ -128,6 +136,10 @@
         color: #fff;
         span {
             padding-right: 12px; 
+            @include b(410) {
+                display: block;
+                margin-bottom: 20px;
+            }
         }
     }
 

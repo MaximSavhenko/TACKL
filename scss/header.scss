@@ -33,6 +33,11 @@
         justify-content:space-between;
         align-items: center;
         padding: 84px 0 60px 0;
+        @include b(500) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 50px 0 50px 0;
+        }
     }
 
     &__search {
@@ -65,6 +70,12 @@
         left: 50%;
         transform: translate(-50% , -50%);
         margin-top: -5px;
+        @include b(500) {
+            position: static;
+            transform: none;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
         img {
             max-width: 100%;
         }
@@ -74,9 +85,9 @@
         display: flex;
         align-items: center;
         padding-right: 20px;
-        @include b(tablet) {
-            
-         }
+        @include b(500) {
+            margin-bottom: 20px;
+        }
             a {
                 font-size: 16px;
                 font-weight: 500;

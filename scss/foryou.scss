@@ -1,24 +1,22 @@
 .foryou {    
     margin-bottom: 94px;
     &__wrap{
-        // display: flex;
-        // flex-direction: column;
-        text-align: center;
     }
     
     &__descr {
         margin-bottom: 13px;
+        text-align: center;
     }
 
     &__capt {
+        text-align: center;
         position: relative;
-        margin-bottom: 60px;
         &::after {
             content: '';
             position: absolute;
             left: 50%;
             transform: translate(-50% , -50%);
-            bottom: -15px;
+            bottom: -22px;
             width: 89px;
             height: 9px;
             background-color: #B6C4A2;
@@ -45,7 +43,7 @@
 
     &__items-inner {
         background-color: #fff;
-        padding: 21px 44px;
+        padding: 21px 35px;
         box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.2);
         p { 
             font-weight: 700;

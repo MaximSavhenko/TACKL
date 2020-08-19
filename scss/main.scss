@@ -73,7 +73,10 @@ h1, h2, h3, h4, h5, h6, ul , p {
     text-transform: uppercase;
     @include b(tablet) {
         font-size: 70px;
-     }
+    }
+    @include b(500) {
+        font-size: 50px;
+    }
   }
 
   .descr {
@@ -247,7 +250,7 @@ input:-webkit-autofill:active {
 
 .slick-list {
     overflow: visible;
-    padding: 60px 0;
+    padding: 68px 0;
     min-width: 0;
 }
 
@@ -262,10 +265,11 @@ input:-webkit-autofill:active {
     background-color: transparent;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .slick-arrow.slick-prev{
-    left: -30px;
+    left: -20px;
     @include b(tablet) {
         left: 0;
         z-index: 1;
@@ -285,7 +289,7 @@ input:-webkit-autofill:active {
 }
 
 .slick-arrow.slick-next{
-   right: -30px;
+   right: -20px;
       @include b(tablet) {
           right: 0;
           z-index: 1;
