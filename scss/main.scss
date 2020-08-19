@@ -238,6 +238,34 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.arrow {
+    @include  b(tablet){
+    }
+    a::after {
+        content: "";
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 3px;
+        right: -15px;
+        display: block;
+        border-bottom: 2px solid #B6C4A2;
+        border-left: 2px solid #B6C4A2;
+        border-radius: 2px;
+        width: 8px;
+        height: 8px;
+        @include trs;
+        @include  b(tablet){
+            right: 0;
+        display: block;
+            
+        }
+     }
+    a:hover:after {
+        transform: rotate(135deg);
+        top: 5px;
+    }
+}
+
 // SLICK SLIDER ---------------------------------------
 
 .slider {

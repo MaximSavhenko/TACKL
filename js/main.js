@@ -33,18 +33,6 @@ $(document).ready(function(){
 });
 
 
-// function toggleMobileMenu() {
-// 	var item = document.querySelector('.foryou__slider-items'),
-// 	var slickSlide = document.querySelector('.slick-slider'),
-// 	var slickActive = document.querySelector('.slick-active');
-// 	if (item = slickActive) {
-// 		item.onclick = function () {
-			
-// 		};
-// 	}
-// };
-
-
 function toggleMobileMenu() {
 	var btnMenu = document.querySelector('.header__btn-menu'),
 		navWrap = document.querySelector('.header__wrap-nav');
