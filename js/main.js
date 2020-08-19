@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	$(".header__card-closeBtn").click(function(){
+		newFunction_1();
+	});
+	$(".header__img-card , .header__card-closeBtn").click(function(){
+		return newFunction();
+	});
+	
 	
 	$('.foryou__slider , .bestsellers__slider').slick({
 		arrows: true,
@@ -31,6 +38,16 @@ $(document).ready(function(){
 		]
 	});
 });
+
+
+
+function newFunction_1() {
+	$(".header__card-list").removeClass('active');
+};
+function newFunction() {
+	$(".header__card-list").addClass('active');
+};
+
 
 
 function toggleMobileMenu() {
