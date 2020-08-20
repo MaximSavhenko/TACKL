@@ -262,6 +262,7 @@
             padding: 100px 0;
             background-color: #fff;
             @include trs;
+            box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
         }
         &.active {
             left: 0;
@@ -342,7 +343,6 @@
 
         &:hover {
             .header__submenu {
-                display: flex;
                 opacity: 1;
                 overflow: visible;
                 z-index: 2;
@@ -375,6 +375,10 @@
         @include b(tablet) {
             max-height: 100%;
             width: 100%;
+            display: none;
         }
+        // &.active {
+        //     display: flex;
+        // }
     }
 }
