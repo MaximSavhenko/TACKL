@@ -6,9 +6,6 @@ $(document).ready(function(){
 	$(".header__card-closeBtn").click(function(){
 		return newFunction_1();
 	});
-	$(".header__nav-item").click(function(){
-		$(".header__submenu").toggleClass('active');
-	});
 	
 	$('.foryou__slider , .bestsellers__slider').slick({
 		arrows: true,
