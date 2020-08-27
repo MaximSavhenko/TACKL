@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$('.foryou__slider , .bestsellers__slider').slick({
 		arrows: true,
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		responsive: [
 			{
 			  breakpoint: 1025,

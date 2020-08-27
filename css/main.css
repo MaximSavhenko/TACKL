@@ -793,6 +793,9 @@
   color: #fff;
   font-weight: 500;
 }
+.footer__col-items a:hover {
+  text-decoration: underline;
+}
 .footer__col-items-strong {
   color: #fff;
   font-weight: 700;
