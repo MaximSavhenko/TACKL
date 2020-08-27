@@ -1,11 +1,5 @@
 @import "fonts.scss";
 @import "mixins.scss";
-@import "header.scss";
-@import "headerBottomMenu.scss";
-@import "offers.scss";
-@import "foryou.scss";
-@import "bestsellers.scss";
-@import "footer.scss";
 
 
 
@@ -85,24 +79,27 @@ h1, h2, h3, h4, h5, h6, ul , p {
       text-transform: uppercase;
   }
   
-  .btn {
+  .btn,
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
     width: 100%;
-    font-size: 16px;
+    height: 51px;
+    font-size: 14px;
     font-weight: 700;
     font-family: 'Montserrat' , sans-serif , Arial;
-    background-color: #FB5018;
-    border-radius: 16px;
+    background-color: #466660;
+    border-radius: 22px;
     text-align: center;
-    padding: 13px 27px;
-    color: #fff;
+    padding: 0 27px;
+    color: #FFF0DE;
     cursor: pointer;
     @include trs;
 
     &:hover {
-        background-color: #0000FF;
+        background-color: #3C4146;
     }
 
   }
@@ -355,3 +352,10 @@ input:-webkit-autofill:active {
 
 // SLICK SLIDER ---------------------------------------
 
+
+@import "header.scss";
+@import "headerBottomMenu.scss";
+@import "offers.scss";
+@import "foryou.scss";
+@import "bestsellers.scss";
+@import "footer.scss";
