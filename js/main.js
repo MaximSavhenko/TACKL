@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+	$('img').bind('contextmenu', function(e) {
+		return false;
+	});
 	
 	$(".header__img-card").click(function(){
 		return newFunction();
