@@ -104,8 +104,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   text-transform: uppercase;
 }
 
-.btn,
-button {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,8 +122,7 @@ button {
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn:hover,
-button:hover {
+.btn:hover {
   background-color: #3C4146;
 }
 
